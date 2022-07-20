@@ -16,9 +16,12 @@ footer {
 }
 
 img {
-    border: 2px solid white;
+    border: 2px solid #5a296d;
+    border-radius: 25px;
+
     position: absolute;
     left: 750px;
+    
 }
 
 .content_article {
