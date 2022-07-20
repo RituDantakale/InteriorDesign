@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>image filter</title>
+    <!-- custom css -->
+    
+    <style>
+        body {
+            text-align: center;
+            font-family: arial;
+        }
+
+        input {
+            display: none;
+        }
+
+        .tag {
+            font-size: 1.4rem;
+            margin: 1.5rem 0rem;
+            padding: 5px 1.8rem;
+            background-color: #efefef;
+            display: inline-block;
+            color: black;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            transition: all .4s ease-in-out;
+        }
+
+        /* filter css */
+
+        #bedroom:checked~.images>img:not([class *="bedroom"]),
+        #kitchen:checked~.images>img:not([class *="kitchen"]),
+        #bathroom:checked~.images>img:not([class *="bathroom"]) {
+            width: 0px;
+            height: 0px;
+        }
+
+        #all:checked~.all,
+        #bedroom:checked~.bedroom,
+        #kitchen:checked~.kitchen,
+        #bathroom:checked~.bathroom {
+            background-color: #333333;
+            color: white;
+        }
+        body {
+            background-image: url("../resources/background.webp");
+            background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            
+        }
+        h2{
+            margin-top: auto;
+            padding: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Gallery</h2>
+    <input type="radio" id="all" name="radioBtn" checked>
+    <input type="radio" id="bedroom" name="radioBtn">
+    <input type="radio" id="kitchen" name="radioBtn">
+    <input type="radio" id="bathroom" name="radioBtn">
+
+    <label for="all" class="tag all">All</label>
+    <label for="bedroom" class="tag bedroom">Bedroom</label>
+    <label for="kitchen" class="tag kitchen">Kitchen</label>
+    <label for="bathroom" class="tag bathroom">Bathroom</label>
+    <br>
+
+    <div class="images">
+        <img src="..\resources\bathroom1.jpg" class="bathroom1">
+        <img src="..\resources\bathroom2.jpg" class="bathroom2">
+        <img src="..\resources\bedroom1.jpg" class="bedroom1">
+        <img src="..\resources\bedroom2.jpg" class="bedroom2">
+        <img src="..\resources\bedroom3.jpg" class="bedroom3">
+        <img src="..\resources\kitchen1.jpg" class="kitchen1">s
+        <img src="..\resources\kitchen2.jpg" class="kitchen2">
+        <img src="..\resources\kitchen3.jpeg" class="kitchen3">
+    </div>
+</body>
+
+</html>
