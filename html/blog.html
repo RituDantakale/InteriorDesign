@@ -12,7 +12,7 @@
         }
         body{
             background-image: url("../resources/home.jpg");
-             
+             background-attachment: fixed;
             height: 1000px;
             background-position: center;
             background-repeat: no-repeat;
@@ -59,12 +59,23 @@ font-size: medium;
 
         }
         .button{
-  background-color:rgb(175, 211, 196);
-  color: black;
-  
-  border-radius: 5px;
+  background-color:rgb(50, 112, 184);
+  color: white;
+width: 150px;
+ 
+  border-radius:10px;
   font-size:20px;
-  
+  padding:3px;
+ position: relative;
+left:150px;
+
+}
+.bg{
+    background-color: gray;
+    border: 2px solid black;
+    margin-left: 200px;
+    padding:10px;
+    border-radius: 25px;
 }
        
     
@@ -100,7 +111,8 @@ font-size: medium;
 
 
     <h1> Leave Your Comment</h1>
-    <table>
+    <table class="bg">
+       
         <form>
            
             <tr>
@@ -118,7 +130,7 @@ font-size: medium;
             </tr>
             <tr>
                 <td> <label> Message</label></td>
-                <td> <textarea cols="120" rows="7"> </textarea></td>
+                <td> <textarea cols="90" rows="5"> </textarea></td>
             </tr>
             <tr>
                 <td><input class="button" type="submit" ></td>
@@ -126,6 +138,7 @@ font-size: medium;
         
 
         </form>
+   
     </table>
     
     
