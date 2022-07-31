@@ -7,17 +7,28 @@
     <style>
 
         */{
-            margin-left: 300px;
-            margin-right: 300px;
+            margin-left: 500px;
+            margin-right: 500px;
+        }
+        body{
+            background-image: url("../resources/home.jpg");
+             background-attachment: fixed;
+            height: 1000px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* position: relative;color:#166e21; */
+            
+
         }
         
         .cust {
             border: 2px solid #ccc;
             border-radius: 5px;
             background-color: rgb(212, 209, 209);
-            margin-left: 100px;
-            margin-right: 100px;
-
+            margin-left: 150px;
+            margin-right: 150px;
+font-size: medium;
             padding: 16px;
         }
        
@@ -36,16 +47,47 @@
         span{
             color:rgb(5, 117, 5)
         }
-        /* iframe{
-            border-radius: 10px;
-        } */
+        h1{
+            text-align: center;
+            position: relative;color:#5a296d;
+            text-shadow:1px 1px  white;
+        }
+        table {
+            margin-left: 200px;
+            margin-right: 100px;
+            font-size: medium;
+            padding:10px;
+    border-radius: 25px;
+
+
+        }
+        .button{
+  background-color:rgb(50, 112, 184);
+  color: white;
+width: 150px;
+ 
+  border-radius:10px;
+  font-size:20px;
+  padding:3px;
+ position: relative;
+left:150px;
+
+}
+.bg{
+    background-color: rgb(221, 214, 214);
+    /* border: 2px solid black; */
+    margin-left: 200px;
+    padding:10px;
+    border-radius: 25px;
+}
+       
     
     </style>
 
 </head>
 
 <body>
-    <h3> Testimonials</h3>
+    <h1> Testimonials</h1>
     <div class="cust">
         <img src="../resources/female.jpg" alt="Avatar" style="width:90px">
         <p><span>Aastha Malhotra</span> Mumbai</p>
@@ -71,9 +113,11 @@
 
 
 
-    <h3> Leave Your Comment</h3>
-    <table>
+    <h1> Leave Your Comment</h1>
+    <table class="bg">
+       
         <form>
+           
             <tr>
                 <td><label> Name</label></td>
                 <td><input type="text"> </td>
@@ -89,15 +133,19 @@
             </tr>
             <tr>
                 <td> <label> Message</label></td>
-                <td> <textarea cols="120" rows="7"> </textarea></td>
+                <td> <textarea cols="90" rows="5"> </textarea></td>
             </tr>
             <tr>
-                <td><input type="submit"></td>
+                <td><input class="button" type="submit" ></td>
             </tr>
+        
 
         </form>
+   
     </table>
-    <!-- <iframe src="url" title="my frame"></iframe> -->
+    
+    
+    
 </body>
 
 </html>

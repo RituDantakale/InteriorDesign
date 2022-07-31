@@ -12,11 +12,18 @@
 *{
     text-align: center;
  margin-top: 20px;
+ margin-left: 20px;
+ /* margin-right: 20px; */
 }
+body{
+            background-image: url("../resources/home.jpg");
+        }
 .columns {
+  background-color: rgb(212, 209, 209);
     float: left;
     width: 20%;
     padding: 6px;
+    border-radius: 10px;
     
     
   }
@@ -36,40 +43,55 @@
   }
    
   .button{
-  background-color:rgb(167, 47, 117);
+  background-color:rgb(209, 46, 141);
   color:white;
   
   border-radius: 5px;
-  font-size:30px;
+  font-size:20px;
   
 }
-  .li{
-    color: cadetblue;
-  }
-  .grey{
+  
+  .grey {
     color:black;
     font-size:30px;
     font-weight:bolder;
 
   }
-  h3{
-    text-align: left;
+
+  .content{
+    font-size:large;
+    font-weight:bolder;
+
   }
+  .li{
+    color: rgb(59, 202, 119);
+    font-size: large;
+    font-weight:bolder;
+
+  }
+  h1{
+            text-align: center;
+            position: relative;color:#5a296d;
+            text-shadow:1px 1px  white;
+        }
+  
   </style> 
     <body>
-      <h3> Quotation</h3>
+      <h1> Quotation</h1>
 
 <div class="columns">
     <ul class="price">
       <li class="header">Basic</li>
       <li class="grey">$99.00</li>
+      <div class="content">
       <li>Decorating Services</li>
       <li>Home Remodeling</li>
       <span  class="li"><li>Complete Color Analyses</li>
         <li>Space Planing</li>
         <li>Painting And Wall Covering</li></span>
       <li class="grey"><a href="#" class="button">Book Now !</a></li> 
-      <!-- <li><input type="button" alt="sign up"></li> -->
+    </div>
+      
 
     </ul>
   </div>
@@ -78,12 +100,14 @@
     <ul class="price">
       <li class="header">Classic</li>
       <li class="grey">$149.00</li>
+      <div class="content">
       <li>Decorating Services</li>
       <li>Home Remodeling</li>
       <li>Complete Color Analyses</li>
       <span class="li"><li>Space Planing</li>
         <li>Painting And Wall Covering</li></span>
       <li class="grey"><a href="#" class="button">Book Now !</a></li>
+    </div>
     </ul>
   </div>
 
@@ -91,12 +115,14 @@
     <ul class="price">
       <li class="header">Gold</li>
       <li class="grey">$199.00</li>
+      <div class="content">
       <li>Decorating Services</li>
       <li>Home Remodeling</li>
       <li>Complete Color Analyses</li>
       <li>Space Planing</li>
       <span class="li"> <li>Painting And Wall Covering</li></span>
       <li class="grey"><a href="#" class="button">Book Now !</a></li>
+    </div>
     </ul>
   </div>
 
@@ -104,12 +130,15 @@
     <ul class="price">
       <li class="header">Platinum</li>
       <li class="grey">$249.00</li>
+      <div class="content">
       <li>Decorating Services</li>
       <li>Home Remodeling</li>
       <li>Complete Color Analyses</li>
       <li>Space Planing</li>
-      <li>Painting And Wall Covering</li>
+      <li>Painting And Wall Covering </li>
+       <br>
       <li class="grey"><a href="#" class="button">Book Now !</a></li>
+    </div>
     </ul>
   </div>
 

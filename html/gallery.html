@@ -10,6 +10,7 @@
         body {
             text-align: center;
             font-family: arial;
+            
         }
         
 
@@ -19,7 +20,7 @@
 
         .tag {
             font-size: 1.4rem;
-            margin: 1.5rem 0rem;
+            margin: 0;
             padding: 5px 1.8rem;
             background-color: #efefef;
             display: inline-block;
@@ -32,6 +33,10 @@
             width: 300px;
             height: 300px;
             transition: all .4s ease-in-out;
+            margin:5px;
+            border:solid 2px #ccc;
+            border-radius: 10px;
+
         }
 
         /* filter css */
@@ -47,7 +52,7 @@
         #bedroom:checked~.bedroom,
         #kitchen:checked~.kitchen,
         #bathroom:checked~.bathroom {
-            background-color: #333333;
+            background-color:black;
             color: white;
         }
         body {
@@ -57,12 +62,17 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            position: relative;
+            background-attachment: fixed;
+
+           
             
         }
         h2{
             margin-top: auto;
             padding: 0px;
+            text-shadow:2px 2px  white;
+            position: relative;color:#5a296d;
+            font-size: 40px;
         }
     </style>
 
@@ -87,7 +97,7 @@
         <img src="..\resources\bedroom1.jpg" class="bedroom1">
         <img src="..\resources\bedroom2.jpg" class="bedroom2">
         <img src="..\resources\bedroom3.jpg" class="bedroom3">
-        <img src="..\resources\kitchen1.jpg" class="kitchen1">s
+        <img src="..\resources\kitchen1.jpg" class="kitchen1">
         <img src="..\resources\kitchen2.jpg" class="kitchen2">
         <img src="..\resources\kitchen3.jpeg" class="kitchen3">
     </div>
