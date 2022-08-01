@@ -7,6 +7,8 @@
             background-image: url("C:/Users/Shree/Desktop/Angular/interior_design/resources/image.jpg");
             background-repeat: no-repeat;
             background-size: cover;
+            height: 100%;
+            width:100%;
         }
 
         nav {
@@ -25,13 +27,13 @@
             float: left;
         }
 
-        .logo img {
-            position: absolute;
+        .logo  {
+           
             margin-top: 2px;
             margin-left: 2px;
         
         }
-        nav a {
+        nav .pad1{
             width: 100px;
             display: block;
             padding: 20px 15px;
@@ -45,26 +47,38 @@
             background-color: rgb(196, 239, 6);
             text-transform: uppercase;
         }
+  
+        nav a .pad{
+        padding: 0;
+}
+.navbar{
+    margin-top: 0;
+}
+
     </style>
 </head>
 
 <body>
-    <div class="logo">
-        <a href="#"> <img src="C:\Users\Shree\Desktop\Angular\interior_design\resources\logo1.jpg" height="50px"
-                width="50px"></a>
-    </div>
-    <nav>
+    
+    <nav class="navbar">
         <ul>
-            <li><a href="home.html"> Home</a> </li>
-            <li><a href="aboutus.html"> About Us</a> </li>
-            <li><a href="gallery.html">Gallery </a> </li>
-            <li> <a href="services.html">Services </a></li>
-            <li><a href="qutations.html"> Quatations</a> </li>
-            <li><a href="blog.html">Blog</a> </li>
-            <li><a href="contactus.html">Contact Us</a> </li>
+            <li class="pad">
+                <a  href="#"> <img class="logo"src="../resources/logo1.jpg" height="50px"
+                        width="50px"></a>
+            </li>
+            <li  ><a class="pad1"href="home.html" target="myFrame"> Home</a> </li>
+            <li  ><a class="pad1"href="aboutus.html" target="myFrame"> About Us</a> </li>
+            <li  ><a class="pad1"href="gallery.html"target="myFrame">Gallery </a> </li>
+            
+            <li  ><a class="pad1"href="qutations.html"target="myFrame"> Quatations</a> </li>
+            <li  ><a class="pad1"href="blog.html"target="myFrame">Blog</a> </li>
+            <li  ><a class="pad1"href="contactus.html"target="myFrame">Contact Us</a> </li>
         </ul>
     </nav>
-
+    <div class="frame_section">
+        <iframe name="myFrame" height="90%" width="100%" src="home.html" style="border: none" >
+        </iframe>
+    </div>
 </body>
 
 </html>
